@@ -1,0 +1,191 @@
+    <!-- Header -->
+    <header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="../../index.php" class="logo-link">
+                    <img src="assets/img/logo.png" alt="Logo SMPN 3 Pasar Kemis" class="logo-img">
+                    <h1>SMPN 3 Pasar Kemis<span>.</span></h1>
+                </a>
+            </div>
+            
+        <nav class="main-nav">
+            <ul class="nav-list">
+            <li class="nav-item"><a href="../../index.php" class="nav-link">Home</a></li>
+            
+            <!-- Profil -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link active">Profil</a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Visi & Misi</a></li>
+                <li><a href="staff.php">Staff</a></li>
+                <li><a href="sarana.php">Sarana & Prasarana</a></li>
+                <li><a href="prestasi.php">Prestasi</a></li>
+                </ul>
+            </li>
+
+            <!-- Informasi -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Informasi</a>
+                <ul class="dropdown-menu">
+                <li><a href="../information/pengumuman.php">Pengumuman & Berita</a></li>
+                <li><a href="../information/ekskul.php">Ektrakulikuler</a></li>
+                <li><a href="../information/so.php">Struktur Organisasi</a></li>
+                <li><a href="../information/osis.php">Osis</a></li>
+                </ul>
+            </li>
+
+            <!-- Galeri -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Galeri</a>
+                <ul class="dropdown-menu">
+                <li><a href="../galeri/galeri_kegiatan.php">Kegiatan</a></li>
+                <li><a href="../galeri/galeri_guru.php">Guru</a></li>
+                <li><a href="../galeri/galeri_siswa.php">Siswa</a></li>
+                <li><a href="../galeri/galeri_video.php">Video</a></li>
+                </ul>
+            </li>
+
+            <!-- Dokumen -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Dokumen</a>
+                <ul class="dropdown-menu">
+                <li><a href="../dokumen/silabus.php">Silabus</a></li>
+                <li><a href="../dokumen/bahan_ajar.php">Bahan Ajar</a></li>
+                <li><a href="../dokumen/kumpulan.php">Kumpulan</a></li>
+                </ul>
+            </li>
+
+            
+
+            <!-- Search Form -->
+            <div class="search-container">
+                <form class="search-form">
+                <input type="text" placeholder="SMPN 3 Pasar Kemis" class="search-input">
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                </form>
+            </div>
+        </nav>
+        
+        <div class="header-actions">
+            <div class="search-toggle">
+            <i class="fas fa-search"></i>
+            </div>
+            <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+        </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+    <div class="mobile-menu-header">
+        <div class="logo">
+        <a href="#" class="logo-link">
+                    <img src="assets/img/logo.png" alt="Logo SMPN 3 Pasar Kemis" class="logo-img">
+                    <h1>SMP Negeri 3 Pasar Kemis<span>.</span></h1>
+                </a>
+        </div>
+        <div class="mobile-menu-close">
+        <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <nav class="mobile-nav">
+    <ul class="mobile-nav-list">
+    <li class="mobile-nav-item"><a href="../../index.php" class="mobile-nav-link">Home</a></li>
+
+        <!-- Dropdown untuk Profil -->
+            <li class="mobile-nav-item has-submenu active">
+            <a href="#" class="mobile-nav-link">Profil</a>
+            <ul class="mobile-dropdown-menu">
+                <li><a href="#">Visi & Misi</a></li>
+                <li><a href="staff.php">Staff</a></li>
+                <li><a href="sarana.php">Sarana & Prasarana</a></li>
+                <li><a href="prestasi.php">Prestasi</a></li>
+            </ul>
+            </li>
+
+            <!-- Dropdown untuk Informasi -->
+            <li class="mobile-nav-item has-submenu">
+            <a href="#" class="mobile-nav-link">Informasi</a>
+            <ul class="mobile-dropdown-menu">
+                <li><a href="../information/pengumuman.php">Pengumuman & Berita</a></li>
+                <li><a href="../information/ekskul.php">Ektrakulikuler</a></li>
+                <li><a href="../information/so.php">Struktur Organisasi</a></li>
+                <li><a href="../information/osis.php">Osis</a></li>
+            </ul>
+            </li>
+
+            <!-- Dropdown untuk Galeri -->
+            <li class="mobile-nav-item has-submenu">
+            <a href="#" class="mobile-nav-link">Galeri</a>
+            <ul class="mobile-dropdown-menu">
+                <li><a href="../galeri/galeri_kegiatan.php">Kegiatan</a></li>
+                <li><a href="../galeri/galeri_guru.php">Guru</a></li>
+                <li><a href="../galeri/galeri_siswa.php">Siswa</a></li>
+                <li><a href="../galeri/galeri_video.php">Video</a></li>
+            </ul>
+            </li>
+
+            <!-- Dropdown untuk Dokumen -->
+            <li class="mobile-nav-item has-submenu">
+            <a href="#" class="mobile-nav-link">Dokumen</a>
+            <ul class="mobile-dropdown-menu">
+                <li><a href="../dokumen/silabus.php">Silabus</a></li>
+                <li><a href="../dokumen/bahan_ajar.php">Bahan Ajar</a></li>
+                <li><a href="../dokumen/kumpulan.php">Kumpulan</a></li>
+            </ul>
+            </li>
+
+        </ul>
+
+    </nav>
+    </div>
+
+    <script>
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenuClose = document.querySelector('.mobile-menu-close');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        // Menangani klik pada tombol menu mobile
+        if (mobileMenuToggle && mobileMenu && mobileMenuClose) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Mencegah scroll saat menu aktif
+        });
+
+        mobileMenuClose.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = ''; // Mengembalikan scroll
+        });
+        }
+
+        // Menangani klik pada menu dropdown di mobile
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+        mobileNavItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Toggle active state untuk menunjukkan/menyembunyikan dropdown
+            this.classList.toggle('active');
+        });
+        });
+    </script>
+    <script>
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item.has-submenu');
+
+        mobileNavItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            // Mencegah link untuk bekerja (mencegah reload atau navigasi)
+            event.preventDefault();
+            
+            // Toggle active state untuk menunjukkan/menyembunyikan dropdown
+            this.classList.toggle('active');
+        });
+        });
+
+    </script>

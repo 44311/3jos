@@ -1,0 +1,232 @@
+.cards-staff {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    grid-gap: 24px;
+    padding: 16px; 
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+@media (min-width: 540px) {
+.cards-staff {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (min-width: 960px) {
+.cards-staff {
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+.cards-staff {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+}
+
+.card-staff {
+position: relative;
+padding-bottom: 150%;
+cursor: pointer;
+transition: transform 0.3s ease;
+}
+
+.card-staff-background {
+background-size: cover;
+background-position: center;
+position: absolute;
+left: 0; top: 0; right: 0; bottom: 0;
+border-radius: 24px;
+filter: brightness(.75) saturate(1.2) contrast(.85);
+transition: .3s;
+}
+
+.card-staff-content {
+    position: absolute;
+    padding: 24px;
+    font-family: arial, sans-serif;
+    color: white;
+    z-index: 1;
+}
+
+.card-staff-content p {
+    color: rgba(255, 255, 255, .6);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.card-staff-content h3 {
+    font-size: 1.9rem;
+    color: rgba(255, 255, 255, .9);
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+}
+
+.card-staff:hover .card-staff-background {
+transform: scale(1.05);
+}
+
+.cards-staff:hover > .card-staff:not(:hover) > .card-staff-background {
+filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+
+
+.content-container-staff.active {
+transform: scale(1);
+}
+
+.content-item-staff {
+    display: none;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-item-staff h2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.content-item-staff.active {
+    display: block;
+    transform: scale(1);
+}
+
+.close-btn-staff {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.close-btn-staff:hover {
+    color: #ff6347;
+}
+
+/* =================================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+.container-cardflip-staff {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+
+}
+
+.cardflip-staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.cardflip-staff {
+    width: 200px;
+    height: 320px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.cardflip-staff-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1.6s;
+}
+
+.cardflip-staff.flip .cardflip-staff-inner {
+    transform: rotateY(180deg);
+}
+
+.cardflip-staff-front, .cardflip-staff-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardflip-staff-front img, .flip-photo {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardflip-staff-back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+
+.cardflip-staff-back h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cardflip-staff-back p {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+    .cardflip-staff-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardflip-staff-container{ 
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardflip-staff-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardflip-staff-front, .cardflip-staff-back{ 
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        backface-visibility: hidden;
+    }
+}
