@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>SMPN 3 Pasar Kemis - sarana & prasarana</title>
-    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
     
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../../assets/css/main_index.css">
-    <link rel="stylesheet" href="assets/css/sarana.css">
+    <link rel="stylesheet" href="assets/css/s_p.css">
 
 </head>
 <body>
@@ -39,19 +39,19 @@
             <div class="carousel-item active">
             <img src="assets/img/bg.jpg" class="d-block w-100" alt="Gerbang Sekolah">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Gerbang SMP Negeri 3 Pasar Kemis</h5>
+                <h3>Gerbang SMP Negeri 3 Pasar Kemis</h3>
             </div>
             </div>
             <div class="carousel-item">
             <img src="assets/img/OP.jpg" class="d-block w-100" alt="Lapangan Sekolah">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Lapangan Serbaguna</h5>
+                <h3>Lapangan</h3>
             </div>
             </div>
             <div class="carousel-item">
             <img src="assets/img/bg.jpg" class="d-block w-100" alt="Ruang Kelas">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Ruang Kelas Modern</h5>
+                <h3>Ruang Kelas</h3>
             </div>
             </div>
         </div>
@@ -65,60 +65,57 @@
         </a>
         </div>
 
-
     <!-- =============================================================================================== -->
     <!-- Content -->    
-    <h2 class="galeri-sarana-title">Galeri Guru</h2>
-
-    <div class="galeri-sarana-container">
-        <div class="galeri-sarana-item" onclick="openModal('../../assets/img/OP.jpg')">
+    <div class="galeri-s_p-container">
+        <div class="galeri-s_p-item" onclick="openModal('../../assets/img/OP.jpg')">
             <img src="img/OP.jpg" alt="Foto 1">
-            <p class="caption-sarana">Deskripsi Foto 1</p>
+            <p class="caption-s_p">Deskripsi Foto 1</p>
         </div>
-        <div class="galeri-sarana-item" onclick="openModal('img/ini.jpg')">
+        <div class="galeri-s_p-item" onclick="openModal('img/ini.jpg')">
             <img src="img/ini.jpg" alt="Foto 2">
-            <p class="caption-sarana">Deskripsi Foto 2</p>
+            <p class="caption-s_p">Deskripsi Foto 2</p>
         </div>
-        <div class="galeri-sarana-item" onclick="openModal('img/bg.jpg')">
+        <div class="galeri-s_p-item" onclick="openModal('img/bg.jpg')">
             <img src="img/bg.jpg" alt="Foto 3">
-            <p class="caption-sarana">Deskripsi Foto 3</p>
+            <p class="caption-s_p">Deskripsi Foto 3</p>
         </div>
-        <div class="galeri-sarana-item" onclick="openModal('img/ini.jpg')">
+        <div class="galeri-s_p-item" onclick="openModal('img/ini.jpg')">
             <img src="img/ini.jpg" alt="Foto 2">
-            <p class="caption-sarana">Deskripsi Foto 2</p>
+            <p class="caption-s_p">Deskripsi Foto 2</p>
         </div>
-        <div class="galeri-sarana-item" onclick="openModal('img/OP.jpg')">
+        <div class="galeri-s_p-item" onclick="openModal('img/OP.jpg')">
             <img src="img/OP.jpg" alt="Foto 1">
-            <p class="caption-sarana">Deskripsi Foto 1</p>
+            <p class="caption-s_p">Deskripsi Foto 1</p>
         </div>
-        <div class="galeri-sarana-item" onclick="openModal('img/ini.jpg')">
+        <div class="galeri-s_p-item" onclick="openModal('img/ini.jpg')">
             <img src="img/ini.jpg" alt="Foto 2">
-            <p class="caption-sarana">Deskripsi Foto 2</p>
+            <p class="caption-s_p">Deskripsi Foto 2</p>
         </div>
-        <div class="galeri-sarana-item" onclick="openModal('img/bg.jpg')">
+        <div class="galeri-s_p-item" onclick="openModal('img/bg.jpg')">
             <img src="img/bg.jpg" alt="Foto 3">
-            <p class="caption-sarana">Deskripsi Foto 3</p>
+            <p class="caption-s_p">Deskripsi Foto 3</p>
         </div>
-        <div class="galeri-sarana-item" onclick="openModal('img/ini.jpg')">
+        <div class="galeri-s_p-item" onclick="openModal('img/ini.jpg')">
             <img src="img/ini.jpg" alt="Foto 2">
-            <p class="caption-sarana">Deskripsi Foto 2</p>
+            <p class="caption-s_p">Deskripsi Foto 2</p>
         </div>
     </div>
 
-    <div id="modal-sarana" class="modal-sarana">
-        <span class="close-sarana" onclick="closeModal()">&times;</span>
-        <img class="modal-sarana-content" id="modal-sarana-image">
-        <div class="modal-sarana-caption-sarana" id="modal-sarana-caption-sarana"></div>
+    <div id="modal-s_p" class="modal-s_p">
+        <span class="close-s_p" onclick="closeModal()">&times;</span>
+        <img class="modal-s_p-content" id="modal-s_p-image">
+        <div class="modal-s_p-caption-s_p" id="modal-s_p-caption-s_p"></div>
     </div>
 
-    <script src="assets/js/sarana.js"></script>
+    <script src="assets/js/s_p.js"></script>
 
     <!-- =============================================================================================== -->
     <!-- Footer -->
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/Project_SMPN3/includes/home/footer.php'; ?>
     <!-- =============================================================================================== --> 
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        
 </body>
 </html>
             

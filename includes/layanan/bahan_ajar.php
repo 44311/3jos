@@ -7,13 +7,21 @@
     <title>SMPN 3 Pasar Kemis</title>
     <link rel="icon" type="image/png" href="../../assets/img/logo.png">
 
-    <link rel="stylesheet" href="assets/css/galeri_sgk.css">
 
 </head>
 <body>
     <!-- =============================================================================================== -->
     <!-- Header --> 
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/Project_SMPN3/includes/home/header.php'); ?>
+
+    <!-- =============================================================================================== -->
+    <!-- Banner -->
+    <?php
+        $bannerImage = 'assets/img/bg.jpg';
+        $bannerTitle = 'Dokumen Pelajaran';   
+
+        include '../component/banner.php';
+    ?>
 
     <!-- =============================================================================================== -->
     <!-- Content -->

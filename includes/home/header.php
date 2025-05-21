@@ -73,7 +73,6 @@
             <ul class="dropdown-menu">
                 <li><a href="/Project_SMPN3/includes/information/pengumuman.php" class="<?= ($currentPage == 'pengumuman.php') ? 'active' : '' ?>">Pengumuman & Berita</a></li>
                 <li><a href="/Project_SMPN3/includes/information/ekskul.php" class="<?= ($currentPage == 'ekskul.php') ? 'active' : '' ?>">Ektrakulikuler</a></li>
-                <li><a href="/Project_SMPN3/includes/information/so.php" class="<?= ($currentPage == 'so.php') ? 'active' : '' ?>">Struktur Organisasi</a></li>
                 <li><a href="/Project_SMPN3/includes/information/osis.php" class="<?= ($currentPage == 'osis.php') ? 'active' : '' ?>">Osis</a></li>
             </ul>
             </li>
@@ -91,11 +90,11 @@
 
             <!-- Dokumen -->
             <li class="nav-item dropdown">
-            <a href="#" class="nav-link <?= in_array($currentPage, ['silabus.php', 'bahan_ajar.php', 'kumpulan.php']) ? 'active' : '' ?>">Dokumen</a>
+            <a href="#" class="nav-link <?= in_array($currentPage, ['silabus.php', 'bahan_ajar.php', 'kumpulan.php']) ? 'active' : '' ?>">Layanan</a>
             <ul class="dropdown-menu">
-                <li><a href="/Project_SMPN3/includes/dokumen/silabus.php" class="<?= ($currentPage == 'silabus.php') ? 'active' : '' ?>">Silabus</a></li>
-                <li><a href="/Project_SMPN3/includes/dokumen/bahan_ajar.php" class="<?= ($currentPage == 'bahan_ajar.php') ? 'active' : '' ?>">Bahan Ajar</a></li>
-                <li><a href="/Project_SMPN3/includes/dokumen/kumpulan.php" class="<?= ($currentPage == 'kumpulan.php') ? 'active' : '' ?>">Kumpulan</a></li>
+                <li><a href="/Project_SMPN3/includes/layanan/silabus.php" class="<?= ($currentPage == 'silabus.php') ? 'active' : '' ?>">Silabus</a></li>
+                <li><a href="/Project_SMPN3/includes/layanan/bahan_ajar.php" class="<?= ($currentPage == 'bahan_ajar.php') ? 'active' : '' ?>">Bahan Ajar</a></li>
+                <li><a href="/Project_SMPN3/includes/layanan/kumpulan.php" class="<?= ($currentPage == 'kumpulan.php') ? 'active' : '' ?>">Kumpulan</a></li>
             </ul>
             </li>
 
@@ -162,7 +161,6 @@
                 <ul class="mobile-dropdown-menu">
                 <li><a href="/Project_SMPN3/includes/information/pengumuman.php" class="<?= ($currentPage == 'pengumuman.php') ? 'active' : '' ?>">Pengumuman & Berita</a></li>
                 <li><a href="/Project_SMPN3/includes/information/ekskul.php" class="<?= ($currentPage == 'ekskul.php') ? 'active' : '' ?>">Ektrakulikuler</a></li>
-                <li><a href="/Project_SMPN3/includes/information/so.php" class="<?= ($currentPage == 'so.php') ? 'active' : '' ?>">Struktur Organisasi</a></li>
                 <li><a href="/Project_SMPN3/includes/information/osis.php" class="<?= ($currentPage == 'osis.php') ? 'active' : '' ?>">Osis</a></li>
                 </ul>
             </li>
@@ -180,11 +178,11 @@
 
             <!-- Dropdown Dokumen -->
             <li class="mobile-nav-item has-submenu">
-                <a href="#" class="mobile-nav-link <?= in_array($currentPage, ['silabus.php', 'bahan_ajar.php', 'kumpulan.php']) ? 'active' : '' ?>">Dokumen</a>
+                <a href="#" class="mobile-nav-link <?= in_array($currentPage, ['silabus.php', 'bahan_ajar.php', 'kumpulan.php']) ? 'active' : '' ?>">Layanan</a>
                 <ul class="mobile-dropdown-menu">
-                <li><a href="/Project_SMPN3/includes/dokumen/silabus.php" class="<?= ($currentPage == 'silabus.php') ? 'active' : '' ?>">Silabus</a></li>
-                <li><a href="/Project_SMPN3/includes/dokumen/bahan_ajar.php" class="<?= ($currentPage == 'bahan_ajar.php') ? 'active' : '' ?>">Bahan Ajar</a></li>
-                <li><a href="/Project_SMPN3/includes/dokumen/kumpulan.php" class="<?= ($currentPage == 'kumpulan.php') ? 'active' : '' ?>">Kumpulan</a></li>
+                <li><a href="/Project_SMPN3/includes/layanan/silabus.php" class="<?= ($currentPage == 'silabus.php') ? 'active' : '' ?>">Silabus</a></li>
+                <li><a href="/Project_SMPN3/includes/layanan/bahan_ajar.php" class="<?= ($currentPage == 'bahan_ajar.php') ? 'active' : '' ?>">Bahan Ajar</a></li>
+                <li><a href="/Project_SMPN3/includes/layanan/kumpulan.php" class="<?= ($currentPage == 'kumpulan.php') ? 'active' : '' ?>">Kumpulan</a></li>
                 </ul>
             </li>
             </ul>

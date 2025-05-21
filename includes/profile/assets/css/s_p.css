@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-.galeri-sarana-title {
+.galeri-s_p-title {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
@@ -12,8 +12,8 @@ body {
     margin-bottom: -90px;
 }
 
-.galeri-sarana-container {
-    margin-top: 100px;
+.galeri-s_p-container {
+    margin-top: 30px;
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -21,7 +21,7 @@ body {
     padding: 20px;
 }
 
-.galeri-sarana-item {
+.galeri-s_p-item {
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
@@ -38,12 +38,12 @@ body {
     justify-content: center;
 }
 
-.galeri-sarana-item:hover {
+.galeri-s_p-item:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.galeri-sarana-item img {
+.galeri-s_p-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -51,7 +51,7 @@ body {
     background-color: #fafafa;
 }
 
-.caption-sarana {
+.caption-s_p {
     padding: 8px;
     font-size: 14px;
     text-align: center;
@@ -62,7 +62,7 @@ body {
     margin-top: 8px;
 } 
 
-.modal-sarana {
+.modal-s_p {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -75,14 +75,14 @@ body {
     align-items: center;
 }
 
-.modal-sarana-content {
+.modal-s_p-content {
     max-width: 90%;
     max-height: 80%;
     border-radius: 12px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.close-sarana {
+.close-s_p {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -91,7 +91,7 @@ body {
     cursor: pointer;
 }
 
-.modal-sarana-caption {
+.modal-s_p-caption {
     margin-top: 10px;
     color: #fff;
     text-align: center;

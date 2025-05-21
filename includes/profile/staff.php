@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>SMPN 3 Pasar Kemis - staff</title>
-    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
 
     <link rel="stylesheet" href="assets/css/staff.css">
 

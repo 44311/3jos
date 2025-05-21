@@ -1,0 +1,154 @@
+    .section-title-osis {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10%;
+    background-color: #f9fbfc;
+    }
+
+    .section-subtitle-osis {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    }
+    
+    .osis-hierarchy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    }
+
+    .osis-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    }
+
+    .osis-member {
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #f9fbfc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+    }
+
+    .osis-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .osis-member img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0b3f63;
+    transition: transform 0.5s ease;
+    }
+    .osis-member img:hover {
+    transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+    .section-title-osis {
+        font-size: 20px;
+        padding-top: 20%;
+        margin-bottom: 10px;
+    }   
+    
+    .section-subtitle-osis {
+        font-size: 12px;
+    } 
+
+    .osis-hierarchy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .osis-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .osis-member {
+        width: 90%;
+        max-width: 300px;
+    }
+    }
+
+    /* Ukuran masing-masing posisi */
+    .ketua {
+    width: auto;
+    }
+    .ketua img {
+    width: 200px;
+    height: 200px;
+    }
+
+    .wakil {
+    width: auto;
+    }
+    .wakil img {
+    width: 180px;
+    height: 180px;
+    }
+
+    .sedang {
+    width: auto;
+    }
+    .sedang img {
+    width: 170px;
+    height: 170px;
+    }
+
+    .kecil {
+    width: auto;
+    }
+    .kecil img {
+    width: 165px;
+    height: 165px;
+    }
+
+    .osis-member h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    }
+    .osis-member p {
+    font-size: 13px;
+    color: #555;
+    }
+
+    .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    }
+
+    .social-link {
+    color: #444;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-link:hover {
+    transform: scale(1.2);
+    }
+
+    .social-link.ig:hover {
+    color: #e1306c; /* Instagram pink */
+    }
+
+    .social-link.fb:hover {
+    color: #1877f2; /* Facebook blue */
+    }
+
+    .social-link.tiktok:hover {
+    color: #ffffff; /* TikTok black */
+    }
+

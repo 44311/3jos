@@ -10,8 +10,8 @@ body {
     margin: auto;
     width: 100%;
     max-width: 1200px;
-    grid-gap: 24px;
-    padding: 16px; 
+    grid-gap: 25px;
+    padding: 25px; 
     margin-top: 10%;
     padding-bottom: 100px;
 }

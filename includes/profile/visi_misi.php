@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMPN 3 Pasar Kemis - Visi Misi</title>
-    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/visi_misi.css">
