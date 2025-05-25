@@ -24,7 +24,7 @@
         <div class="card-ekskul-background" style="background-image: url(https://images.unsplash.com/photo-1610375233612-d6a66ac3af99?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1047&q=80)"></div>
         <div class="card-ekskul-content">
             <p>Ektrakulikuler</p>
-            <h3>Basket</h3>
+            <h3>Pramuka</h3>
         </div>
         </a>
         
@@ -33,7 +33,7 @@
         <div class="card-ekskul-background" style="background-image: url(https://images.unsplash.com/photo-1593971657261-184f7a3a72de?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)"></div>
         <div class="card-ekskul-content">
             <p>Ekstrakulikuler</p>
-            <h3>Ping Pong</h3>
+            <h3>Karate</h3>
         </div>
         </a>
         
@@ -41,7 +41,7 @@
         <div class="card-ekskul-background" style="background-image: url(https://images.unsplash.com/photo-1532465614-6cc8d45f647f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)"></div>
         <div class="card-ekskul-content">
             <p>Ekstrakulikuler</p>
-            <h3>Volly</h3>
+            <h3>Tari</h3>
         </div>
         </a>
         
@@ -49,17 +49,17 @@
         <div class="card-ekskul-background" style="background-image: url(https://images.unsplash.com/photo-1502003148287-a82ef80a6abc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)"></div>
         <div class="card-ekskul-content">
             <p>Ekstrakulikuler</p>
-            <h3>Badminton</h3>
+            <h3>PMR (Palang Merah Remaja)</h3>
         </div>
         </a>
     </section>
     <div class="content-container-ekskul">
-        <div class="content-item-ekskul" id="basket">
+        <div class="content-item-ekskul" id="Pramuka">
         <button class="close-btn-ekskul">X</button>
-            <h2>Basket</h2>
-            <p>Konten untuk ekstrakurikuler Basket. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <h2>Pramuka</h2>
+            <p>Konten untuk ekstrakurikuler Pramuka. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             <img class="content-img-ekskul" src="../../assets/img/OP2.jpg" alt="">
-            <p>Konten untuk ekstrakurikuler Basket. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Konten untuk ekstrakurikuler Pramuka. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             <img class="content-img-ekskul" src="../../assets/img/OP.jpg" alt="">
         </div>
 
@@ -67,9 +67,9 @@
         <button class="close-btn-ekskul">X</button>
             <h2>Ping Pong</h2>
             <p>Konten untuk ekstrakurikuler Ping Pong. Nulla facilisi. Sed viverra dolor vitae sapien.</p>
-            <p>Konten untuk ekstrakurikuler Basket. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Konten untuk ekstrakurikuler Pramuka. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             <img class="content-img-ekskul" src="../../assets/img/OP2.jpg" alt="">
-            <p>Konten untuk ekstrakurikuler Basket. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Konten untuk ekstrakurikuler Pramuka. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             <img class="content-img-ekskul" src="../../assets/img/OP.jpg" alt="">
         </div>
 
@@ -77,9 +77,9 @@
         <button class="close-btn-ekskul">X</button>
             <h2>Volly</h2>
             <p>Konten untuk ekstrakurikuler Volly. Cras sollicitudin, tortor eget vulputate elementum.</p>
-            <p>Konten untuk ekstrakurikuler Basket. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Konten untuk ekstrakurikuler Pramuka. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             <img class="content-img-ekskul" src="../../assets/img/OP2.jpg" alt="">
-            <p>Konten untuk ekstrakurikuler Basket. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Konten untuk ekstrakurikuler Pramuka. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             <img class="content-img-ekskul" src="../../assets/img/OP.jpg" alt="">
         </div>
 
@@ -87,9 +87,9 @@
         <button class="close-btn-ekskul">X</button>
             <h2>Badminton</h2>
             <p>Konten untuk ekstrakurikuler Badminton. Suspendisse potenti. Integer nec est euismod.</p>
-            <p>Konten untuk ekstrakurikuler Basket. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Konten untuk ekstrakurikuler Pramuka. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             <img class="content-img-ekskul" src="../../assets/img/OP2.jpg" alt="">
-            <p>Konten untuk ekstrakurikuler Basket. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Konten untuk ekstrakurikuler Pramuka. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             <img class="content-img-ekskul" src="../../assets/img/OP.jpg" alt="">
         </div>
     </div>

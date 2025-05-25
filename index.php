@@ -69,7 +69,7 @@
                 </div>
                 <div class="category-icon-cards">
                     <div class="category-icon-card">
-                        <a href="includes/information/so.php">
+                        <a href="includes/profile/staff.php">
                             <div class="category-icon-icon">
                                 <i class="fa-solid fa-sitemap"></i>
                             </div>

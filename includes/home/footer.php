@@ -50,7 +50,7 @@
         © 2025 SMP Negeri 3 Pasar Kemis.
       </div>
       <div class="footer-bottom-links">
-        <a href="#"><i class="fa-solid fa-circle-user"></i> Admin</a>
+        <a href="/Project_SMPN3/admin/auth/login.php"><i class="fa-solid fa-circle-user"></i> Login </a>
       </div>
     </div>
   </div>

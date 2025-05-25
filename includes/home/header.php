@@ -109,13 +109,8 @@
             </div>
         </ul>
         </nav>
-
-
         
         <div class="header-actions">
-            <div class="search-toggle">
-            <i class="fas fa-search"></i>
-            </div>
             <div class="mobile-menu-toggle">
             <i class="fas fa-bars"></i>
             </div>

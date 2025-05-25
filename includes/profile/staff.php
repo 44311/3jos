@@ -89,10 +89,10 @@
                         <div class="cardflip-staff">
                             <div class="cardflip-staff-inner">
                                 <div class="cardflip-staff-front">
-                                    <img src="../../assets/img/ini.jpg" alt="Guru 1">
+                                    <img src="../../assets/img/ini2.jpg" alt="Guru 1">
                                 </div>
                                 <div class="cardflip-staff-back">
-                                    <img src="../../assets/img/ini.jpg" alt="Guru 1 Flip" class="flip-photo">
+                                    <img src="../../assets/img/ini3.jpg" alt="Guru 1 Flip" class="flip-photo">
                                     <h3>Nama Guru 1</h3>
                                     <p>Mata Pelajaran: Matematika</p>
                                     <p>Deskripsi singkat tentang Guru 1.</p>

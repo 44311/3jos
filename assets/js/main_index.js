@@ -25,34 +25,6 @@
             }
         });
         }
-        
-        // Theme toggle (light/dark mode)
-        const themeToggle = document.querySelector('.theme-toggle');
-        const htmlElement = document.documentElement;
-        
-        if (themeToggle) {
-        // Check for saved theme preference or prefer-color-scheme
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
-        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-            htmlElement.classList.add('dark-mode');
-            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-        }
-        
-        themeToggle.addEventListener('click', function() {
-            htmlElement.classList.toggle('dark-mode');
-            
-            if (htmlElement.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
-            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-            } else {
-            localStorage.setItem('theme', 'light');
-            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-            }
-        });
-        }
-        
         // Back to top button
         const backToTopButton = document.querySelector('.back-to-top');
         
