@@ -92,7 +92,7 @@
             <li class="nav-item dropdown">
             <a href="#" class="nav-link <?= in_array($currentPage, ['silabus.php', 'bahan_ajar.php', 'kumpulan.php']) ? 'active' : '' ?>">Layanan</a>
             <ul class="dropdown-menu">
-                <li><a href="/Project_SMPN3/includes/layanan/silabus.php" class="<?= ($currentPage == 'silabus.php') ? 'active' : '' ?>">Silabus</a></li>
+                <li><a href="/Project_SMPN3/includes/layanan/cp.php" class="<?= ($currentPage == 'cp.php') ? 'active' : '' ?>">Capaian Pembelajaran</a></li>
                 <li><a href="/Project_SMPN3/includes/layanan/bahan_ajar.php" class="<?= ($currentPage == 'bahan_ajar.php') ? 'active' : '' ?>">Bahan Ajar</a></li>
                 <li><a href="/Project_SMPN3/includes/layanan/kumpulan.php" class="<?= ($currentPage == 'kumpulan.php') ? 'active' : '' ?>">Kumpulan</a></li>
             </ul>

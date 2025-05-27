@@ -1,3 +1,27 @@
+<?php
+// Mulai session kalau perlu (untuk umum biasanya gak wajib, kecuali ada fitur login)
+// session_start();
+
+include $_SERVER['DOCUMENT_ROOT'] . '/Project_SMPN3/config/config.php';
+
+// Ambil data galeri guru dari database
+$query = "SELECT * FROM galeri_siswa ORDER BY id DESC";
+$result = mysqli_query($conn, $query);
+
+$galeri_items = [];
+if ($result && mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $galeri_items[] = [
+            'img' => '/Project_SMPN3/admin/dist/galeri/galeri_siswa/uploads/' . $row['filename'], // sesuaikan pathnya ya' . $row['filename'],  // sesuaikan pathnya ya
+            'caption' => $row['caption']
+        ];
+    }
+} else {
+    // Kalau gak ada data di DB, tetap bisa pake array kosong supaya galeri_sgk.php gak error
+    $galeri_items = [];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -30,18 +54,7 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <?php
-        $galeri_items = [
-            ["img" => "img/bg.jpg", "caption" => "Galeri siswa 1"],
-            ["img" => "img/ini.jpg", "caption" => "Galeri siswa 2"],
-            ["img" => "img/ini.jpg", "caption" => "Galeri siswa 3"],
-            ["img" => "img/ini.jpg", "caption" => "Galeri siswa 4"],
-            ["img" => "img/ini.jpg", "caption" => "Galeri siswa 5"],
-            ["img" => "img/ini.jpg", "caption" => "Galeri siswa 6"],
-            // dst
-        ];
-        include '../component/galeri_sgk.php';
-    ?>
+    <?php include '../component/galeri_sgk.php'; ?>
     
     <!-- =============================================================================================== -->
     <!-- Footer -->
@@ -49,5 +62,6 @@
     <!-- =============================================================================================== --> 
     
 </body>
+<script src="assets/js/galeri_sgk.js"></script>
 </html>
             

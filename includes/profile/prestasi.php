@@ -1,3 +1,26 @@
+<?php
+// Mulai session kalau perlu (untuk umum biasanya gak wajib, kecuali ada fitur login)
+// session_start();
+
+include $_SERVER['DOCUMENT_ROOT'] . '/Project_SMPN3/config/config.php';
+
+// Ambil data galeri guru dari database
+$query = "SELECT * FROM galeri_prestasi ORDER BY id DESC";
+$result = mysqli_query($conn, $query);
+
+$galeri_items = [];
+if ($result && mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $galeri_items[] = [
+            'img' => '/Project_SMPN3/admin/dist/prestasi/uploads/' . $row['filename'], // sesuaikan pathnya ya' . $row['filename'],  // sesuaikan pathnya ya
+            'caption' => $row['caption']
+        ];
+    }
+} else {
+    // Kalau gak ada data di DB, tetap bisa pake array kosong supaya galeri_sgk.php gak error
+    $galeri_items = [];
+}
+?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -12,8 +35,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="../galeri/assets/css/galeri_sgk.css">
     <link rel="stylesheet" href="../../assets/css/main_index.css">
-    <link rel="stylesheet" href="assets/css/s_p.css">
 
 </head>
 <body>
@@ -66,56 +89,15 @@
         </div>
 
     <!-- =============================================================================================== -->
-    <!-- Content -->    
-    <div class="galeri-s_p-container">
-        <div class="galeri-s_p-item" onclick="openModal('../../assets/img/OP.jpg')">
-            <img src="img/OP.jpg" alt="Foto 1">
-            <p class="caption-s_p">Deskripsi Foto 1</p>
-        </div>
-        <div class="galeri-s_p-item" onclick="openModal('img/ini.jpg')">
-            <img src="img/ini.jpg" alt="Foto 2">
-            <p class="caption-s_p">Deskripsi Foto 2</p>
-        </div>
-        <div class="galeri-s_p-item" onclick="openModal('img/bg.jpg')">
-            <img src="img/bg.jpg" alt="Foto 3">
-            <p class="caption-s_p">Deskripsi Foto 3</p>
-        </div>
-        <div class="galeri-s_p-item" onclick="openModal('img/ini.jpg')">
-            <img src="img/ini.jpg" alt="Foto 2">
-            <p class="caption-s_p">Deskripsi Foto 2</p>
-        </div>
-        <div class="galeri-s_p-item" onclick="openModal('img/OP.jpg')">
-            <img src="img/OP.jpg" alt="Foto 1">
-            <p class="caption-s_p">Deskripsi Foto 1</p>
-        </div>
-        <div class="galeri-s_p-item" onclick="openModal('img/ini.jpg')">
-            <img src="img/ini.jpg" alt="Foto 2">
-            <p class="caption-s_p">Deskripsi Foto 2</p>
-        </div>
-        <div class="galeri-s_p-item" onclick="openModal('img/bg.jpg')">
-            <img src="img/bg.jpg" alt="Foto 3">
-            <p class="caption-s_p">Deskripsi Foto 3</p>
-        </div>
-        <div class="galeri-s_p-item" onclick="openModal('img/ini.jpg')">
-            <img src="img/ini.jpg" alt="Foto 2">
-            <p class="caption-s_p">Deskripsi Foto 2</p>
-        </div>
-    </div>
-
-    <div id="modal-s_p" class="modal-s_p">
-        <span class="close-s_p" onclick="closeModal()">&times;</span>
-        <img class="modal-s_p-content" id="modal-s_p-image">
-        <div class="modal-s_p-caption-s_p" id="modal-s_p-caption-s_p"></div>
-    </div>
-
-    <script src="assets/js/s_p.js"></script>   
-
+    <!-- Content -->     
+    <?php include '../component/galeri_sgk.php'; ?>
 
     <!-- =============================================================================================== -->
     <!-- Footer -->
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/Project_SMPN3/includes/home/footer.php'; ?>
     <!-- =============================================================================================== --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../galeri/assets/js/galeri_sgk.js"></script>
 </body>
 </html>
             

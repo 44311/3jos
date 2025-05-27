@@ -21,10 +21,14 @@ if (isset($_POST['login'])) {
         // Verifikasi password hash
         if (password_verify($password, $row['password'])) {
             $_SESSION['loginAdmin'] = [
-                'id_admin' => $row['id_admin'],
-                'nama' => $row['nama'],
-                'username' => $row['username']
+                'id_admin'     => $row['id_admin'],
+                'Nama'         => $row['Nama'],
+                'username'     => $row['username'],
+                'email_admin'  => $row['email_admin'],
+                'telp_admin'   => $row['telp_admin'],
+                'alamat_admin' => $row['alamat_admin']
             ];
+
             header("Location: /Project_SMPN3/admin/dist/dashboard.php");
             exit;
         }
