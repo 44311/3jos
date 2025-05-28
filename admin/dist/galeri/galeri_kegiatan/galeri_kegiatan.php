@@ -57,6 +57,7 @@ if (isset($_GET['delete'])) {
 <head>
     <meta charset="UTF-8">
     <title>Kelola Galeri Kegiatan</title>
+    <link rel="icon" type="image/png" href="/Project_SMPN3/assets/img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Penting! -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>

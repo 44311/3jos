@@ -84,13 +84,12 @@
                 <li><a href="/Project_SMPN3/includes/galeri/galeri_kegiatan.php" class="<?= ($currentPage == 'galeri_kegiatan.php') ? 'active' : '' ?>">Kegiatan</a></li>
                 <li><a href="/Project_SMPN3/includes/galeri/galeri_guru.php" class="<?= ($currentPage == 'galeri_guru.php') ? 'active' : '' ?>">Guru</a></li>
                 <li><a href="/Project_SMPN3/includes/galeri/galeri_siswa.php" class="<?= ($currentPage == 'galeri_siswa.php') ? 'active' : '' ?>">Siswa</a></li>
-                <li><a href="/Project_SMPN3/includes/galeri/galeri_video.php" class="<?= ($currentPage == 'galeri_video.php') ? 'active' : '' ?>">Video</a></li>
             </ul>
             </li>
 
             <!-- Dokumen -->
             <li class="nav-item dropdown">
-            <a href="#" class="nav-link <?= in_array($currentPage, ['silabus.php', 'bahan_ajar.php', 'kumpulan.php']) ? 'active' : '' ?>">Layanan</a>
+            <a href="#" class="nav-link <?= in_array($currentPage, ['cp.php', 'bahan_ajar.php', 'kumpulan.php']) ? 'active' : '' ?>">Layanan</a>
             <ul class="dropdown-menu">
                 <li><a href="/Project_SMPN3/includes/layanan/cp.php" class="<?= ($currentPage == 'cp.php') ? 'active' : '' ?>">Capaian Pembelajaran</a></li>
                 <li><a href="/Project_SMPN3/includes/layanan/bahan_ajar.php" class="<?= ($currentPage == 'bahan_ajar.php') ? 'active' : '' ?>">Bahan Ajar</a></li>

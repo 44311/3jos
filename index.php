@@ -131,150 +131,23 @@ if (mysqli_num_rows($cek) == 0) {
     </section>>
 
     <!-- =================================================================================================================== -->
-
-    <!-- Latest Posts Section -->
+    <!-- Pengumuman -->
     <section class="latest-posts">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Pengumuman & Berita</h2>
-                <a href="#" class="view-all">Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
+                <a href="includes/information/pengumuman.php" class="view-all">Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="posts-grid">
-                <!-- Post Card 1 -->
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="assets/img/bg.jpg" alt="Blog Post">
-                        <div class="post-category">Teknolojia</div>
-                    </div>
-                    <div class="post-content">
-                        <a href="#">
-                            <h3 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                                eiusmod tempor.</h3>
-                        </a>
-                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                            eiusmod tempor.</p>
-                        <div class="post-meta">
-                            <div class="post-date">10 Oktober 2002</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Post Card 2 -->
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="assets/img/OP.jpg" alt="Blog Post">
-                        <div class="post-category">Lorem Ipsum</div>
-                    </div>
-                    <div class="post-content">
-                        <a href="#">
-                            <h3 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                                eiusmod tempor.</h3>
-                        </a>
-                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                            eiusmod tempor.</p>
-                        <div class="post-meta">
-                            <div class="post-date">18 April 2025</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Post Card 3 -->
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="assets/img/bg.jpg" alt="Blog Post">
-                        <div class="post-category">Lorem Ipsum</div>
-                    </div>
-                    <div class="post-content">
-                        <a href="#">
-                            <h3 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                                eiusmod tempor.</h3>
-                        </a>
-                        <p class="post-excerpt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum."</p>
-                        <div class="post-meta">
-                            <div class="post-date">9 Nababan 2025</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Post Card 3 -->
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="assets/img/OP.jpg" alt="Blog Post">
-                        <div class="post-category">Lorem Ipsum</div>
-                    </div>
-                    <div class="post-content">
-                        <a href="#">
-                            <h3 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                                eiusmod tempor.</h3>
-                        </a>
-                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                            eiusmod tempor.</p>
-                        <div class="post-meta">
-                            <div class="post-date">20 Mei 2025</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Post Card 4 -->
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="assets/img/bg.jpg" alt="Blog Post">
-                        <div class="post-category">Lorem Ipsum</div>
-                    </div>
-                    <div class="post-content">
-                        <a href="#">
-                            <h3 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                                eiusmod tempor.</h3>
-                        </a>
-                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                            eiusmod tempor.</p>
-                        <div class="post-meta">
-                            <div class="post-date">5 September 2023</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Post Card 6 -->
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="assets/img/OP.jpg" alt="Blog Post">
-                        <div class="post-category">Lorem Ipsum</div>
-                    </div>
-                    <div class="post-content">
-                        <a href="#">
-                            <h3 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                                eiusmod tempor.</h3>
-                        </a>
-                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                            eiusmod tempor.</p>
-                        <div class="post-meta">
-                            <div class="post-date">5 Oktober 2023</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Post Card 6 -->
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src=".../../assets/img/ini.jpg" alt="Blog Post">
-                        <div class="post-category">Lorem Ipsum</div>
-                    </div>
-                    <div class="post-content">
-                        <h3 class="post-title">Yapay Zeka ve Makine Öğrenmesindeki Son Gelişmeler</h3>
-                        <p class="post-excerpt">Yapay zeka teknolojilerinin günlük hayatımızı nasıl değiştirdiğine
-                            dair güncel bir değerlendirme.</p>
-                        <div class="post-meta">
-                            <div class="post-date">1 Agustus 2025</div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    $limit = 3;
+                    $base_path_gambar = 'admin/dist/pengumuman/uploads/';
+                    include 'admin/dist/pengumuman/konten_pengumuman.php';
+                ?>
             </div>
+        </div>
     </section>
+
 
     <!-- =================================================================================================================== -->
 

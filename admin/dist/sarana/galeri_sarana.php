@@ -1,9 +1,9 @@
 <?php
 session_start();
-include '../../../../config/config.php';
+include '../../../config/config.php';
 
 // Ambil data dari database
-$galeri = mysqli_query($conn, "SELECT * FROM galeri_guru ORDER BY id DESC");
+$galeri = mysqli_query($conn, "SELECT * FROM galeri_sarana ORDER BY id DESC");
 
 // Cek mode edit
 $editMode = false;
@@ -11,7 +11,7 @@ $editData = ['id' => '', 'caption' => '', 'filename' => ''];
 
 if (isset($_GET['edit'])) {
     $id = $_GET['edit'];
-    $result = mysqli_query($conn, "SELECT * FROM galeri_guru WHERE id = $id");
+    $result = mysqli_query($conn, "SELECT * FROM galeri_sarana WHERE id = $id");
     if ($row = mysqli_fetch_assoc($result)) {
         $editMode = true;
         $editData = $row;
@@ -34,20 +34,20 @@ if (isset($_POST['submit'])) {
 
     if ($id_edit == '') {
         // Tambah baru
-        mysqli_query($conn, "INSERT INTO galeri_guru (filename, caption) VALUES ('$filename', '$caption')");
+        mysqli_query($conn, "INSERT INTO galeri_sarana (filename, caption) VALUES ('$filename', '$caption')");
     } else {
         // Edit
-        mysqli_query($conn, "UPDATE galeri_guru SET filename='$filename', caption='$caption' WHERE id=$id_edit");
+        mysqli_query($conn, "UPDATE galeri_sarana SET filename='$filename', caption='$caption' WHERE id=$id_edit");
     }
-    header("Location: galeri_guru.php");
+    header("Location: galeri_sarana.php");
     exit;
 }
 
 // Proses hapus
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
-    mysqli_query($conn, "DELETE FROM galeri_guru WHERE id=$id");
-    header("Location: galeri_guru.php");
+    mysqli_query($conn, "DELETE FROM galeri_sarana WHERE id=$id");
+    header("Location: galeri_sarana.php");
     exit;
 }
 
@@ -56,20 +56,20 @@ if (isset($_GET['delete'])) {
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Kelola Galeri Guru</title>
+    <title>Kelola Galeri Sarana</title>
     <link rel="icon" type="image/png" href="/Project_SMPN3/assets/img/logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Penting! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         .text-center {
             text-align: center;
             padding-top: 50px;
         }
-        
         .table img {
             width: 100px;
             height: auto;
             border-radius: 8px;
+            transition: all 0.3s ease;
         }
         .form-section {
             background-color: #f8f9fa;
@@ -77,9 +77,15 @@ if (isset($_GET['delete'])) {
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0,0,0,0.05);
         }
+
         @media (max-width: 576px) {
+            .table-responsive {
+                overflow-x: auto;
+            }
             .table img {
-                width: 0px;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
             }
             h2, h4 {
                 font-size: 1.4rem;
@@ -91,10 +97,10 @@ if (isset($_GET['delete'])) {
     </style>
 </head>
 <body>
-    <?php include '../../inc/sidebar.php'; ?>
+    <?php include '../inc/sidebar.php'; ?>
 
 <div class="container my-4">
-    <h2 class="text-center fw-bold mb-4">Kelola Galeri Guru</h2>
+    <h2 class="text-center fw-bold mb-4">Kelola Konten Sarana</h2>
 
     <!-- Tabel Galeri -->
     <div class="table-responsive mb-5">
@@ -146,7 +152,7 @@ if (isset($_GET['delete'])) {
             <div class="mb-3">
                 <button type="submit" name="submit" class="btn btn-primary"><?= $editMode ? 'Update' : 'Simpan' ?></button>
                 <?php if ($editMode): ?>
-                    <a href="galeri_guru.php" class="btn btn-secondary">Batal</a>
+                    <a href="galeri_sarana.php" class="btn btn-secondary">Batal</a>
                 <?php endif; ?>
             </div>
         </form>
@@ -155,4 +161,5 @@ if (isset($_GET['delete'])) {
 
 </body>
 </html>
+
 

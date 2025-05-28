@@ -29,7 +29,7 @@
         <i class="fas fa-arrow-up"></i>
     </a>    
 
-
+    <?php include '../../admin/dist/layanan/bahan_ajar/konten_ba.php'; ?>
     <!-- =============================================================================================== -->
     <!-- Footer -->
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/Project_SMPN3/includes/home/footer.php'; ?>

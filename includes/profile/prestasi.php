@@ -51,42 +51,26 @@ if ($result && mysqli_num_rows($result) > 0) {
     
     <!-- =============================================================================================== -->
         
-            <!-- Carousel Sarana (Bootstrap 5.1) -->
-    <div id="carouselSarana" class="carousel slide mb-5" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselSarana" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselSarana" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselSarana" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner rounded shadow">
-            <div class="carousel-item active">
-            <img src="assets/img/bg.jpg" class="d-block w-100" alt="Gerbang Sekolah">
-            <div class="carousel-caption d-none d-md-block">
-                <h2>Penghargaan Sekolah Terbaik</h1>
-            </div>
-            </div>
-            <div class="carousel-item">
-            <img src="assets/img/OP.jpg" class="d-block w-100" alt="Lapangan Sekolah">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Peresmian Laboratorium</h1>
-            </div>
-            </div>
-            <div class="carousel-item">
-            <img src="assets/img/bg.jpg" class="d-block w-100" alt="Ruang Kelas">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Juara Nasional....</h1>
-            </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselSarana" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Sebelumnya</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselSarana" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Selanjutnya</span>
-        </a>
-        </div>
+        <?php
+            $carouselItems = [
+                [
+                    'img' => 'assets/img/bg.jpg',
+                    'alt' => 'Piagam',
+                    'caption' => 'Penghargaan Sekolah Terbaik'
+                ],
+                [
+                    'img' => 'assets/img/OP.jpg',
+                    'alt' => 'Ruangan Kelas',
+                    'caption' => 'Juara Lomba Kebersihan'
+                ],
+                [
+                    'img' => 'assets/img/kelas.jpg',
+                    'alt' => 'Kunjungan Presiden',
+                    'caption' => 'Kehadiran Presiden'
+                ]
+            ];
+            include '../component/banner2.php';
+        ?>
 
     <!-- =============================================================================================== -->
     <!-- Content -->     
