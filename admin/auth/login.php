@@ -91,7 +91,7 @@ if (isset($_POST['login'])) {
             <button type="submit" name="login" class="btn-login-page">Login</button>
 
             <div class="login-page-g">
-            <a href="../../a_guru/login.php">Login Guru</a>
+            <a href="../../a_guru/auth/login.php">Login Guru</a>
             </div>
         </form>
     </div>

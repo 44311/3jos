@@ -52,7 +52,7 @@ if (isset($_GET['hapus'])) {
 
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10 col-sm-12">
-            <h2 class="text-center fw-bold mb-4">Layanan Bahan Ajar</h2>
+            <h2 class="text-center fw-bold mb-4">Upload Bahan Ajar</h2>
 
             <!-- Form Tambah -->
             <form method="POST" enctype="multipart/form-data" class="mb-4 p-3 border rounded bg-light shadow-sm">
@@ -86,7 +86,7 @@ if (isset($_GET['hapus'])) {
                 <table class="table table-bordered table-striped align-middle">
                     <thead class="table-dark text-center">
                         <tr>
-                            <th>Materi</th>
+                            <th>Judul</th>
                             <th>Mata Pelajaran</th>
                             <th>Kelas</th>
                             <th>File</th>

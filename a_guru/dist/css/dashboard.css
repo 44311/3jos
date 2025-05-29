@@ -1,0 +1,50 @@
+    body {
+    margin: 0;
+    padding-top: 60px;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .offcanvas {
+        width: 260px; /* custom lebar sidebar */
+    }
+
+    .nav-link:hover {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+    .card {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+
+    @media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    .offcanvas-body .nav-link {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .offcanvas-title {
+        font-size: 16px;
+    }
+
+    .navbar-toggler {
+        padding: 4px 6px;
+    }
+
+    .offcanvas {
+        width: 25px; /* atau sesuaikan */
+    }
+}
+
+
+
+

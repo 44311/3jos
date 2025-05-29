@@ -25,25 +25,25 @@ if (isset($_POST['tambah'])) {
 
 // Hapus data
 if (isset($_GET['hapus'])) {
-    $id = $_GET['hapus'];
-    $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pengumuman WHERE id=$id"));
+    $id_pengumuman = $_GET['hapus'];
+    $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pengumuman WHERE id_pengumuman=$id_pengumuman"));
     if ($data['gambar'] != "" && file_exists("uploads/" . $data['gambar'])) {
         unlink("uploads/" . $data['gambar']);
     }
-    mysqli_query($conn, "DELETE FROM pengumuman WHERE id=$id");
+    mysqli_query($conn, "DELETE FROM pengumuman WHERE id_pengumuman=$id_pengumuman");
     header("Location: pengumuman.php");
 }
 
 // Ambil data untuk edit
 $edit = null;
 if (isset($_GET['edit'])) {
-    $id = $_GET['edit'];
-    $edit = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pengumuman WHERE id=$id"));
+    $id_pengumuman = $_GET['edit'];
+    $edit = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pengumuman WHERE id_pengumuman=$id_pengumuman"));
 }
 
 // Update data
 if (isset($_POST['update'])) {
-    $id = $_POST['id'];
+    $id_pengumuman = $_POST['id_pengumuman'];
     $judul = $_POST['judul'];
     $isi = $_POST['isi'];
     $kategori = $_POST['kategori'];
@@ -54,13 +54,13 @@ if (isset($_POST['update'])) {
         $tmp = $_FILES['gambar']['tmp_name'];
         move_uploaded_file($tmp, "uploads/" . $gambar);
         // Hapus gambar lama
-        $lama = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pengumuman WHERE id=$id"));
+        $lama = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pengumuman WHERE id_pengumuman=$id_pengumuman"));
         if ($lama['gambar'] != "" && file_exists("uploads/" . $lama['gambar'])) {
             unlink("uploads/" . $lama['gambar']);
         }
-        $query = "UPDATE pengumuman SET judul='$judul', isi='$isi', kategori='$kategori', tanggal='$tanggal', gambar='$gambar' WHERE id=$id";
+        $query = "UPDATE pengumuman SET judul='$judul', isi='$isi', kategori='$kategori', tanggal='$tanggal', gambar='$gambar' WHERE id_pengumuman=$id_pengumuman";
     } else {
-        $query = "UPDATE pengumuman SET judul='$judul', isi='$isi', kategori='$kategori', tanggal='$tanggal' WHERE id=$id";
+        $query = "UPDATE pengumuman SET judul='$judul', isi='$isi', kategori='$kategori', tanggal='$tanggal' WHERE id_pengumuman=$id_pengumuman";
     }
 
     mysqli_query($conn, $query);
@@ -69,7 +69,7 @@ if (isset($_POST['update'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id_pengumuman">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,7 +116,7 @@ if (isset($_POST['update'])) {
             <tbody>
                 <?php
                 $no = 1;
-                $result = mysqli_query($conn, "SELECT * FROM pengumuman ORDER BY id DESC");
+                $result = mysqli_query($conn, "SELECT * FROM pengumuman ORDER BY id_pengumuman DESC");
                 while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                     <tr>
@@ -126,8 +126,8 @@ if (isset($_POST['update'])) {
                         <td><?= $row['tanggal'] ?></td>
                         <td><img src="uploads/<?= $row['gambar'] ?>" alt="gambar" class="img-thumbnail img-fluid"></td>
                         <td>
-                            <a href="?edit=<?= $row['id'] ?>" class="btn btn-sm btn-warning mb-1">Edit</a>
-                            <a href="?hapus=<?= $row['id'] ?>" class="btn btn-sm btn-danger mb-1" onclick="return confirm('Hapus data ini?')">Hapus</a>
+                            <a href="?edit=<?= $row['id_pengumuman'] ?>" class="btn btn-sm btn-warning mb-1">Edit</a>
+                            <a href="?hapus=<?= $row['id_pengumuman'] ?>" class="btn btn-sm btn-danger mb-1" onclick="return confirm('Hapus data ini?')">Hapus</a>
                         </td>
                     </tr>
                 <?php } ?>
@@ -137,7 +137,7 @@ if (isset($_POST['update'])) {
 
     <h2 class="mb-3"><?= $edit ? "Edit Pengumuman" : "Tambah Pengumuman" ?></h2>
     <form method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="id" value="<?= $edit['id'] ?? '' ?>">
+        <input type="hidden" name="id_pengumuman" value="<?= $edit['id_pengumuman'] ?? '' ?>">
 
         <div class="mb-3">
             <label class="form-label">Judul</label>

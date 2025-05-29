@@ -27,13 +27,35 @@ $query = "
         $tanggal[] = $row['tanggal'];
         $jumlah[] = $row['jumlah'];
     }
-?>
 
-<?php
 // Hitung total pengunjung
 $jumlahPengunjung = mysqli_query($conn, "SELECT COUNT(*) as total FROM pengunjung");
 $dataPengunjung = mysqli_fetch_assoc($jumlahPengunjung);
 $totalPengunjung = $dataPengunjung['total'];
+
+// Ambil jumlah total guru dari tabel akun_guru
+$query_total_guru = mysqli_query($conn, "SELECT COUNT(*) as total FROM akun_guru");
+$data_total_guru = mysqli_fetch_assoc($query_total_guru);
+$total_guru = $data_total_guru['total'];
+
+$q1 = mysqli_query($conn, "SELECT COUNT(*) as total FROM galeri_siswa");
+$q2 = mysqli_query($conn, "SELECT COUNT(*) as total FROM galeri_guru");
+$q3 = mysqli_query($conn, "SELECT COUNT(*) as total FROM galeri_kegiatan");
+
+$total1 = mysqli_fetch_assoc($q1)['total'];
+$total2 = mysqli_fetch_assoc($q2)['total'];
+$total3 = mysqli_fetch_assoc($q3)['total'];
+
+$total_upload_galeri = $total1 + $total2 + $total3;
+
+
+// Query jumlah data bahan ajar
+$q_bahan_ajar = mysqli_query($conn, "SELECT COUNT(*) as total FROM bahan_ajar");
+$total_bahan_ajar = mysqli_fetch_assoc($q_bahan_ajar)['total'];
+
+// Query jumlah data Capaian Pembelajaran
+$q_capaian_pembelajaran = mysqli_query($conn, "SELECT COUNT(*) as total FROM layanan_cp");
+$total_capaian_pembelajaran = mysqli_fetch_assoc($q_capaian_pembelajaran)['total'];
 ?>
 
 
@@ -56,39 +78,39 @@ $totalPengunjung = $dataPengunjung['total'];
 <body>
     <?php include 'inc/sidebar.php'; ?>
     <div class="container mt-5 pt-5">
-        <h3 class="mb-4">Selamat Datang, <?= htmlspecialchars($adminName); ?> !</h3>
+        <h2 class="text-center mb-4">Selamat Datang, <?= htmlspecialchars($adminName); ?> !</h2>
 
         <!-- Statistik Cepat -->
         <div class="row g-3 mb-4">
             <div class="col-md-3">
             <div class="card bg-primary text-white shadow">
                 <div class="card-body">
-                <h5><i class="fas fa-chalkboard-teacher"></i> Total Guru</h5>
-                <h2>25</h2> <!-- ganti pakai query nanti -->
+                <h5><i class="fas fa-chalkboard-teacher"></i> Total Akun Guru</h5>
+                <h2><?= $total_guru ?></h2>
                 </div>
             </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-warning text-dark shadow">
+                    <div class="card-body">
+                        <h5><i class="fas fa-images"></i> Konten Galeri</h5>
+                        <h2><?= $total_upload_galeri ?></h2>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3">
             <div class="card bg-success text-white shadow">
                 <div class="card-body">
-                <h5><i class="fas fa-user-graduate"></i> Total Siswa</h5>
-                <h2>120</h2>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-3">
-            <div class="card bg-warning text-dark shadow">
-                <div class="card-body">
-                <h5><i class="fas fa-trophy"></i> Prestasi</h5>
-                <h2>10</h2>
+                <h5><i class="fas fa-book"></i> Bahan Ajar</h5>
+                <h2><?= $total_bahan_ajar ?></h2>
                 </div>
             </div>
             </div>
             <div class="col-md-3">
             <div class="card bg-danger text-white shadow">
                 <div class="card-body">
-                <h5><i class="fas fa-folder"></i> Dokumen</h5>
-                <h2>15</h2>
+                <h5><i class="fas fa-folder"></i> Capaian Pembelajaran</h5>
+                <h2><?= $total_capaian_pembelajaran ?></h2>
                 </div>
             </div>
             </div>
@@ -97,16 +119,16 @@ $totalPengunjung = $dataPengunjung['total'];
         <!-- Shortcut -->
         <div class="row g-3">
             <div class="col-md-3">
-            <a href="galeri_guru.php" class="btn btn-outline-primary w-100"><i class="fas fa-images"></i> Kelola Galeri Guru</a>
+            <a href="akun_guru/akun_guru.php" class="btn btn-outline-primary w-100"><i class="fas fa-users-cog"></i> Kelola Akun Guru</a>
+            </div>
+            <div class="col-md-3"> 
+                <a href="galeri/galeri_kegiatan/galeri_kegiatan.php" class="btn btn-outline-warning w-100"><i class="fas fa-image"></i> Kelola Galeri</a>
             </div>
             <div class="col-md-3">
-            <a href="prestasi.php" class="btn btn-outline-success w-100"><i class="fas fa-award"></i> Kelola Prestasi</a>
+            <a href="layanan/bahan_ajar/bahan_ajar.php" class="btn btn-outline-success w-100"><i class="fas fa-file"></i> Kelola Bahan Ajar</a>
             </div>
             <div class="col-md-3">
-            <a href="dokumen.php" class="btn btn-outline-danger w-100"><i class="fas fa-file"></i> Kelola Dokumen</a>
-            </div>
-            <div class="col-md-3">
-            <a href="bahan_ajar.php" class="btn btn-outline-warning w-100"><i class="fas fa-book"></i> Bahan Ajar</a>
+            <a href="layanan/capaian_pembelajaran/cp.php" class="btn btn-outline-danger w-100"><i class="fas fa-book"></i> Kelola Capaian Pembelajaran</a>
             </div>
             <div class="col-md-3">
             <div class="card bg-secondary text-white shadow">

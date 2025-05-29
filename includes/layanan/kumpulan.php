@@ -29,6 +29,7 @@
         <i class="fas fa-arrow-up"></i>
     </a>    
 
+    <?php include '../../admin/dist/layanan/kumpulan_dok/konten_kd.php'; ?>
 
     <!-- =============================================================================================== -->
     <!-- Footer -->

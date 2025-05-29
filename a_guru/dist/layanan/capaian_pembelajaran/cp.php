@@ -3,7 +3,7 @@ $conn = new mysqli("localhost", "root", "", "smp3pasarkemis");
 
 // Tambah
 if (isset($_POST['tambah'])) {
-    $materi = $_POST['materi'];
+    $judul = $_POST['judul'];
     $mapel = $_POST['mapel'];
     $kelas = $_POST['kelas'];
 
@@ -11,16 +11,16 @@ if (isset($_POST['tambah'])) {
     $tmp = $_FILES['file']['tmp_name'];
     move_uploaded_file($tmp, "uploads/" . $file);
 
-    $conn->query("INSERT INTO bahan_ajar (materi, mata_pelajaran, kelas, file_pdf) 
-                VALUES ('$materi', '$mapel', '$kelas', '$file')");
-    header("Location: bahan_ajar.php");
+    $conn->query("INSERT INTO layanan_cp (judul, mata_pelajaran, kelas, file_pdf) 
+                VALUES ('$judul', '$mapel', '$kelas', '$file')");
+    header("Location: cp.php");
 }
 
 // Hapus
 if (isset($_GET['hapus'])) {
     $id = $_GET['hapus'];
-    $conn->query("DELETE FROM bahan_ajar WHERE id=$id");
-    header("Location: bahan_ajar.php");
+    $conn->query("DELETE FROM layanan_cp WHERE id=$id");
+    header("Location: cp.php");
 }
 ?>
 
@@ -52,13 +52,13 @@ if (isset($_GET['hapus'])) {
 
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10 col-sm-12">
-            <h2 class="text-center fw-bold mb-4">Layanan Bahan Ajar</h2>
+            <h2 class="text-center fw-bold mb-4">Layanan Capaian Pembelajaran</h2>
 
             <!-- Form Tambah -->
             <form method="POST" enctype="multipart/form-data" class="mb-4 p-3 border rounded bg-light shadow-sm">
                 <div class="mb-3">
-                    <label class="form-label">Materi</label>
-                    <input type="text" name="materi" placeholder="Judul" required class="form-control">
+                    <label class="form-label">Judul</label>
+                    <input type="text" name="judul" placeholder="Judul" required class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Mata Pelajaran</label>
@@ -86,7 +86,7 @@ if (isset($_GET['hapus'])) {
                 <table class="table table-bordered table-striped align-middle">
                     <thead class="table-dark text-center">
                         <tr>
-                            <th>Materi</th>
+                            <th>Judul</th>
                             <th>Mata Pelajaran</th>
                             <th>Kelas</th>
                             <th>File</th>
@@ -96,11 +96,11 @@ if (isset($_GET['hapus'])) {
                     </thead>
                     <tbody>
                         <?php
-                        $q = $conn->query("SELECT * FROM bahan_ajar ORDER BY tanggal_upload DESC");
+                        $q = $conn->query("SELECT * FROM layanan_cp ORDER BY tanggal_upload DESC");
                         while ($row = $q->fetch_assoc()) {
                         ?>
                         <tr>
-                            <td><?= htmlspecialchars($row['materi']) ?></td>
+                            <td><?= htmlspecialchars($row['judul']) ?></td>
                             <td><?= htmlspecialchars($row['mata_pelajaran']) ?></td>
                             <td class="text-center"><?= $row['kelas'] ?></td>
                             <td class="text-center">

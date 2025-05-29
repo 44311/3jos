@@ -22,7 +22,7 @@ while ($row = $data->fetch_assoc()) {
             <div class="post-category"><?= htmlspecialchars($row['kategori']); ?></div>
         </div>
         <div class="post-content">
-            <a href="#">
+            <a href="/Project_SMPN3/admin/dist/pengumuman/detail_pengumuman.php?id=<?= $row['id_pengumuman']; ?>">
                 <h3 class="post-title"><?= nl2br(htmlspecialchars($row['judul'])); ?></h3>
             </a>
             <p class="post-excerpt"><?= nl2br(htmlspecialchars(substr($row['isi'], 0, 100))); ?>...</p>
