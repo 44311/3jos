@@ -13,13 +13,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result && $result->num_rows === 1) {
         $akun = $result->fetch_assoc();
-        if ($akun['password'] === $password) {
+
+        // Gunakan password_verify untuk cek hash password
+        if (password_verify($password, $akun['password'])) {
             $_SESSION['nip_guru'] = $akun['nip'];
             $_SESSION['nama_guru'] = $akun['nama_lengkap'];
             $_SESSION['id_guru'] = $akun['id_guru'];
             $_SESSION['email_guru'] = $akun['email_guru'];
             $_SESSION['telp_guru'] = $akun['telp_guru'];
             $_SESSION['mapel'] = $akun['mapel'];
+
             header("Location: ../dist/dashboard_guru.php");
             exit;
         } else {
@@ -71,11 +74,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="input-box-login-page">
                 <input type="password" name="password" placeholder="Password" required />
             </div>
-
-            <div class="remember-forgot">
-                <a href="#">Forgot password?</a>
-            </div>
-
             <button type="submit" class="btn-login-page">Login</button>
 
             <div class="login-page-g">

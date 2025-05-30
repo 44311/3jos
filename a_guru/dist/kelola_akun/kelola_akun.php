@@ -20,9 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telp = $_POST['telp'];
     $password = $_POST['password'];
 
-    // Jika password diisi, update semuanya
     if (!empty($password)) {
-        $update = mysqli_query($conn, "UPDATE akun_guru SET email_guru='$email', telp_guru='$telp', password='$password' WHERE nip='$nip'");
+        // Enkripsi password baru
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        $update = mysqli_query($conn, "UPDATE akun_guru SET email_guru='$email', telp_guru='$telp', password='$hashed_password' WHERE nip='$nip'");
     } else {
         $update = mysqli_query($conn, "UPDATE akun_guru SET email_guru='$email', telp_guru='$telp' WHERE nip='$nip'");
     }
@@ -34,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="id">

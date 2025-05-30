@@ -84,10 +84,6 @@ if (isset($_POST['login'])) {
             <!-- <i class="bx bxs-lock-alt"></i> -->
             </div>
 
-            <div class="remember-forgot">
-            <a href="#">Forgot password?</a>
-            </div>
-
             <button type="submit" name="login" class="btn-login-page">Login</button>
 
             <div class="login-page-g">

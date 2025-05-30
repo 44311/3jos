@@ -118,7 +118,7 @@ if (mysqli_num_rows($cek) == 0) {
                 </div></a>
 
                 <div class="category-icon-card">
-                    <a href="includes/dokumen/kumpulan.php">
+                    <a href="includes/layanan/kumpulan.php">
                         <div class="category-icon-icon">
                             <i class="fa-regular fa-file"></i>
                         </div>
