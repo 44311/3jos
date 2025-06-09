@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>SMPN 3 Pasar Kemis - ekstrakurikuler</title>
-    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+    <link rel="icon" type="image/png" href="../../assets/img/logo_favicon.png">
     
     <link rel="stylesheet" href="assets/css/ekskul.css">
 
@@ -21,7 +21,7 @@
     </a>
     <section class="cards-ekskul">
         <a href="#" class="card-ekskul">
-        <div class="card-ekskul-background" style="background-image: url(https://images.unsplash.com/photo-1610375233612-d6a66ac3af99?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1047&q=80)"></div>
+        <div class="card-ekskul-background" style="background-image: url(assets/img/pramuka.jpg)"></div>
         <div class="card-ekskul-content">
             <p>Ektrakulikuler</p>
             <h3>Pramuka</h3>
@@ -30,7 +30,7 @@
         
         
         <a href="#" class="card-ekskul">
-        <div class="card-ekskul-background" style="background-image: url(https://images.unsplash.com/photo-1593971657261-184f7a3a72de?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)"></div>
+        <div class="card-ekskul-background" style="background-image: url(assets/img/karate.png)"></div>
         <div class="card-ekskul-content">
             <p>Ekstrakulikuler</p>
             <h3>Karate</h3>
@@ -38,7 +38,7 @@
         </a>
         
         <a href="#" class="card-ekskul">
-        <div class="card-ekskul-background" style="background-image: url(https://images.unsplash.com/photo-1532465614-6cc8d45f647f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)"></div>
+        <div class="card-ekskul-background" style="background-image: url(assets/img/tari.png)"></div>
         <div class="card-ekskul-content">
             <p>Ekstrakulikuler</p>
             <h3>Tari</h3>
@@ -46,7 +46,7 @@
         </a>
         
         <a href="#" class="card-ekskul">
-        <div class="card-ekskul-background" style="background-image: url(https://images.unsplash.com/photo-1502003148287-a82ef80a6abc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)"></div>
+        <div class="card-ekskul-background" style="background-image: url(assets/img/PMR.png)"></div>
         <div class="card-ekskul-content">
             <p>Ekstrakulikuler</p>
             <h3>PMR (Palang Merah Remaja)</h3>

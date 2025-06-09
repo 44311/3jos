@@ -28,7 +28,7 @@ if ($result && mysqli_num_rows($result) > 0) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>SMPN 3 Pasar Kemis - sarana & prasarana</title>
-    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+    <link rel="icon" type="image/png" href="../../assets/img/logo_favicon.png">
     
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -53,19 +53,19 @@ if ($result && mysqli_num_rows($result) > 0) {
         <?php
             $carouselItems = [
                 [
-                    'img' => 'assets/img/bg.jpg',
-                    'alt' => 'Gerbang Sekolah',
-                    'caption' => 'Gerbang SMP Negeri 3 Pasar Kemis'
-                ],
-                [
-                    'img' => 'assets/img/OP.jpg',
+                    'img' => 'assets/img/lapangan_tengah3_2.jpg',
                     'alt' => 'Lapangan Sekolah',
-                    'caption' => 'Lapangan Besar Sekolah'
+                    'caption' => 'Lapangan SMP Negeri 3 Pasar Kemis'
                 ],
                 [
-                    'img' => 'assets/img/kelas.jpg',
-                    'alt' => 'Ruang Kelas',
-                    'caption' => 'Ruang Kelas Modern'
+                    'img' => 'assets/img/perpustakaan.jpg',
+                    'alt' => 'perpustakaan',
+                    'caption' => 'Perpustakaan SMP Negeri 3 Pasar Kemis'
+                ],
+                [
+                    'img' => 'assets/img/ruang_tamu.jpg',
+                    'alt' => 'Ruang Tata Usaha',
+                    'caption' => 'Ruang Tata Usaha SMP Negeri 3 Pasar Kemis'
                 ]
             ];
             include '../component/banner2.php';

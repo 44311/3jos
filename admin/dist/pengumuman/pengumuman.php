@@ -1,4 +1,12 @@
 <?php
+session_start();
+// Cek session login admin
+if (!isset($_SESSION['loginAdmin'])) {
+    header("Location: /Project_SMPN3/admin/auth/login.php");
+    exit;
+}
+?>
+<?php
 // Koneksi database
 include_once("../../../config/config.php");
 

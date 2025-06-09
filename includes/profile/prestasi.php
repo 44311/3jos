@@ -28,7 +28,7 @@ if ($result && mysqli_num_rows($result) > 0) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>SMPN 3 Pasar Kemis - Prestasi</title>
-    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+    <link rel="icon" type="image/png" href="../../assets/img/logo_favicon.png">
     
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -54,20 +54,10 @@ if ($result && mysqli_num_rows($result) > 0) {
         <?php
             $carouselItems = [
                 [
-                    'img' => 'assets/img/bg.jpg',
-                    'alt' => 'Piagam',
-                    'caption' => 'Penghargaan Sekolah Terbaik'
+                    'img' => 'assets/img/piala.jpg',
+                    'alt' => 'Piala',
+                    'caption' => 'Piala Penghargaan Yang di dapat di SMP Negeri 3 Pasar Kemis'
                 ],
-                [
-                    'img' => 'assets/img/OP.jpg',
-                    'alt' => 'Ruangan Kelas',
-                    'caption' => 'Juara Lomba Kebersihan'
-                ],
-                [
-                    'img' => 'assets/img/kelas.jpg',
-                    'alt' => 'Kunjungan Presiden',
-                    'caption' => 'Kehadiran Presiden'
-                ]
             ];
             include '../component/banner2.php';
         ?>

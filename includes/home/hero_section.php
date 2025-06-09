@@ -25,31 +25,31 @@
 
         <!-- Slide 1 -->
         <div class="swiper-slide">
-            <img src="assets/img/bg.jpg" alt="Slide 1">
+            <img src="assets/img/allteacher.jpg" alt="Slide 1">
             <div class="slide-overlay"></div>
             <div class="slide-caption">
-            <h2>Selamat Datang!</h2>
-            <p>Menjelajahi dunia teknologi modern.</p>
+            <h2>Selamat Datang</h2>
+            <p>Di Website resmi SMP Negeri 3 Pasar Kemis</p>
             </div>
         </div>
 
         <!-- Slide 2 -->
         <div class="swiper-slide">
-            <img src="assets/img/OP.jpg" alt="Slide 2">
+            <img src="assets/img/lapangan_tengah2.jpg" alt="Slide 2">
             <div class="slide-overlay"></div>
             <div class="slide-caption">
-            <h2>Inovasi Terbaru</h2>
-            <p>Tetap update dengan perkembangan terbaru.</p>
+            <h2>SMPN 3 Pasar Kemis</h2>
+            <p>MEWUJUDKAN INSAN YANG BERKARAKTER DAN BERPRESTASI MELALUI KOMUNITAS BELAJAR SEPANJANG HAYAT YANG BERWAWASAN GLOBAL.</p>
             </div>
         </div>
 
         <!-- Slide 3 -->
         <div class="swiper-slide">
-            <img src="assets/img/bg.jpg" alt="Slide 3">
+            <img src="assets/img/allteacher2.jpg" alt="Slide 3">
             <div class="slide-overlay"></div>
             <div class="slide-caption">
-            <h2>Kreativitas Tanpa Batas</h2>
-            <p>Wujudkan ide-ide hebat bersama kami.</p>
+            <h2>SMPN 3 Pasar Kemis</h2>
+            <p>Bermartabat.</p>
             </div>
         </div>
 

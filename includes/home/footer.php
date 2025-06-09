@@ -7,12 +7,15 @@
           <h2>SMP Negeri 3 Pasar Kemis<span>.</span></h2>
         </div>
         <p class="about-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam provident enim totam sunt asperiores hic...
+          Mewujudkan insan yang berkarakter dan berprestasi melalui komunitas belajar sepanjang hayat yang berwawasan global.
         </p>
         <div class="social-links">
-          <a href="https://www.facebook.com" class="social-link"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/smpn3pakemofficial?igsh=dTJ1NGYyc3JlMHB4" class="social-link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://youtube.com/@smpn3pakem?feature=shared" class="social-link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
         </div>
       </div>
 
@@ -28,18 +31,20 @@
 
       <div class="footer-contact">
         <h3 class="footer-title">Kontak Kami</h3>
-        <ul class="contact-list">
+        <ul class="footer-list">
           <li class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Jalanin aja dulu</span>
+            <a href="https://maps.app.goo.gl/A2h3riYn5eTP9MYH8" target="_blank">
+              Jl. Perum Villa Permata, Gelam Jaya, Kec. Ps. Kemis, Kabupaten Tangerang, Banten 15560
+            </a>
           </li>
           <li class="contact-item">
             <i class="fas fa-phone"></i>
-            <span>+62 123456789</span>
+            <a href="https://wa.me/6281385085389" target="_blank">0813-8508-5389</a>
           </li>
           <li class="contact-item">
             <i class="fas fa-envelope"></i>
-            <span>smpn3pasarkemis@gmail.com</span>
+            <a href="mailto:smpn3.pasarkemis70@gmail.com">smpn3.pasarkemis70@gmail.com</a>
           </li>
         </ul>
       </div>

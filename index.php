@@ -16,7 +16,7 @@ if (mysqli_num_rows($cek) == 0) {
 
 <head>
     <title>SMPN 3 Pasar Kemis</title>
-    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" href="assets/img/logo_favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">

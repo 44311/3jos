@@ -38,19 +38,19 @@
 }
 
 .bg-visi {
-    background-image: url('../img/OP.jpg');
+    background-image: url('../img/allteacher.jpg');
 }
 
 .bg-misi {
-    background-image: url('..//img/bg.jpg');
+    background-image: url('..//img/lapangan_tengah3.jpg');
 }
 
 .bg-sejarah {   
-    background-image: url('../img/OP.jpg');
+    background-image: url('../img/halaman_depan.jpg');
 }
 
 .bg-sambutan {
-    background-image: url('../img/OP.jpg');
+    background-image: url('../img/halaman_depan.jpg');
 }
 
 .container-vm {
@@ -146,6 +146,16 @@
 .hero-text-vm .social i:hover{
     color:#007ced;
     transform: rotate(360deg);
+}
+
+.vm-text {
+    color: #ffffff;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.vm-text-sub {
+    font-size: 1.2rem;
 }
 
 @media(max-width:768px)

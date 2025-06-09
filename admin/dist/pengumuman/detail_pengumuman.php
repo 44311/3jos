@@ -25,6 +25,7 @@ if ($id > 0):
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><?= htmlspecialchars($row['judul']); ?> - Detail Pengumuman</title>
+    <link rel="icon" type="image/png" href="../../../assets/img/logo.png">
     <style>
         
     </style>

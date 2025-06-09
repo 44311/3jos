@@ -188,6 +188,7 @@ transform: scale(1);
 }
 
 .cardflip-staff-back h3 {
+    text-align: center;
     font-size: 14px;
     margin-bottom: 5px;
 }
