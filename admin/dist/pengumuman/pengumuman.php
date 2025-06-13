@@ -19,7 +19,7 @@ if (isset($_POST['tambah'])) {
 
     $gambar = $_FILES['gambar']['name'];
     $tmp = $_FILES['gambar']['tmp_name'];
-    $folder = "uploads/";
+    $folder = "../../../uploads/pengumuman/";
 
     if ($gambar != "") {
         move_uploaded_file($tmp, "$folder" . $gambar);
@@ -35,8 +35,8 @@ if (isset($_POST['tambah'])) {
 if (isset($_GET['hapus'])) {
     $id_pengumuman = $_GET['hapus'];
     $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pengumuman WHERE id_pengumuman=$id_pengumuman"));
-    if ($data['gambar'] != "" && file_exists("uploads/" . $data['gambar'])) {
-        unlink("uploads/" . $data['gambar']);
+    if ($data['gambar'] != "" && file_exists("../../../uploads/pengumuman/" . $data['gambar'])) {
+        unlink("../../../uploads/pengumuman/" . $data['gambar']);
     }
     mysqli_query($conn, "DELETE FROM pengumuman WHERE id_pengumuman=$id_pengumuman");
     header("Location: pengumuman.php");
@@ -60,11 +60,11 @@ if (isset($_POST['update'])) {
     if ($_FILES['gambar']['name'] != "") {
         $gambar = $_FILES['gambar']['name'];
         $tmp = $_FILES['gambar']['tmp_name'];
-        move_uploaded_file($tmp, "uploads/" . $gambar);
+        move_uploaded_file($tmp, "../../../uploads/pengumuman/" . $gambar);
         // Hapus gambar lama
         $lama = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pengumuman WHERE id_pengumuman=$id_pengumuman"));
-        if ($lama['gambar'] != "" && file_exists("uploads/" . $lama['gambar'])) {
-            unlink("uploads/" . $lama['gambar']);
+        if ($lama['gambar'] != "" && file_exists("../../../uploads/pengumuman/" . $lama['gambar'])) {
+            unlink("../../../uploads/pengumuman/" . $lama['gambar']);
         }
         $query = "UPDATE pengumuman SET judul='$judul', isi='$isi', kategori='$kategori', tanggal='$tanggal', gambar='$gambar' WHERE id_pengumuman=$id_pengumuman";
     } else {
@@ -82,7 +82,7 @@ if (isset($_POST['update'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manajemen Pengumuman</title>
-    <link rel="icon" type="image/png" href="/Project_SMPN3/assets/img/logo.png">
+    <link rel="icon" type="image/png" href="/Project_SMPN3/assets/img/logo_favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .img-thumbnail {
@@ -132,7 +132,7 @@ if (isset($_POST['update'])) {
                         <td><?= $row['judul'] ?></td>
                         <td><?= $row['kategori'] ?></td>
                         <td><?= $row['tanggal'] ?></td>
-                        <td><img src="uploads/<?= $row['gambar'] ?>" alt="gambar" class="img-thumbnail img-fluid"></td>
+                        <td><img src="../../../uploads/pengumuman/<?= $row['gambar'] ?>" alt="gambar" class="img-thumbnail img-fluid"></td>
                         <td>
                             <a href="?edit=<?= $row['id_pengumuman'] ?>" class="btn btn-sm btn-warning mb-1">Edit</a>
                             <a href="?hapus=<?= $row['id_pengumuman'] ?>" class="btn btn-sm btn-danger mb-1" onclick="return confirm('Hapus data ini?')">Hapus</a>
@@ -171,7 +171,7 @@ if (isset($_POST['update'])) {
             <label class="form-label">Gambar <?= $edit ? "(Biarkan kosong jika tidak ingin ganti)" : "" ?></label>
             <input type="file" name="gambar" class="form-control" <?= $edit ? '' : 'required' ?>>
             <?php if ($edit && $edit['gambar']): ?>
-                <img src="uploads/<?= $edit['gambar'] ?>" class="mt-2 img-thumbnail" height="70">
+                <img src="../../../uploads/pengumuman/<?= $edit['gambar'] ?>" class="mt-2 img-thumbnail" height="70">
             <?php endif; ?>
         </div>
 

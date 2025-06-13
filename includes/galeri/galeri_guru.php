@@ -12,7 +12,7 @@ $galeri_items = [];
 if ($result && mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $galeri_items[] = [
-            'img' => '/Project_SMPN3/admin/dist/galeri/galeri_guru/uploads/' . $row['filename'], // sesuaikan pathnya ya' . $row['filename'],  // sesuaikan pathnya ya
+            'img' => '/Project_SMPN3/uploads/galeri_guru/' . $row['filename'], // sesuaikan pathnya ya' . $row['filename'],  // sesuaikan pathnya ya
             'caption' => $row['caption']
         ];
     }
@@ -42,7 +42,7 @@ if ($result && mysqli_num_rows($result) > 0) {
         $bannerTitle = 'Galeri Guru SMPN 3 Pasar Kemis';   
         include '../component/banner.php';
     ?>
-
+    
     <!-- Galeri Guru -->
     <a href="#" class="back-to-top">
         <i class="fas fa-arrow-up"></i>

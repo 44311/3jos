@@ -111,6 +111,7 @@ $akun_guru = $conn->query("SELECT * FROM akun_guru ORDER BY tanggal_dibuat DESC"
 <html>
 <head>
     <title>Kelola Akun Guru</title>
+    <link rel="icon" type="image/png" href="/Project_SMPN3/assets/img/logo_favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- penting untuk responsif -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">

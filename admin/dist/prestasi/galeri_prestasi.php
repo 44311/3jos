@@ -5,9 +5,7 @@ if (!isset($_SESSION['loginAdmin'])) {
     header("Location: /Project_SMPN3/admin/auth/login.php");
     exit;
 }
-?>
-<?php
-session_start();
+
 include '../../../config/config.php';
 
 // Ambil data dari database
@@ -47,6 +45,7 @@ if (isset($_POST['submit'])) {
         // Edit
         mysqli_query($conn, "UPDATE galeri_prestasi SET filename='$filename', caption='$caption' WHERE id=$id_edit");
     }
+
     header("Location: galeri_prestasi.php");
     exit;
 }
@@ -54,18 +53,35 @@ if (isset($_POST['submit'])) {
 // Proses hapus
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
-    mysqli_query($conn, "DELETE FROM galeri_prestasi WHERE id=$id");
+
+    // Ambil nama file
+    $result = mysqli_query($conn, "SELECT filename FROM galeri_prestasi WHERE id=$id");
+    $data = mysqli_fetch_assoc($result);
+
+    if ($data) {
+        $filePath = "uploads/" . $data['filename'];
+
+        // Hapus file dari folder jika ada
+        if (file_exists($filePath)) {
+            unlink($filePath);
+        }
+
+        // Hapus data dari database
+        mysqli_query($conn, "DELETE FROM galeri_prestasi WHERE id=$id");
+    }
+
     header("Location: galeri_prestasi.php");
     exit;
 }
-
 ?>
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <title>Kelola Galeri Siswa</title>
-    <link rel="icon" type="image/png" href="/Project_SMPN3/assets/img/logo.png">
+    <link rel="icon" type="image/png" href="/Project_SMPN3/assets/img/logo_favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Penting! -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>

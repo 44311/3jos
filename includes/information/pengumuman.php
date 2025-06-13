@@ -36,7 +36,7 @@
                 </div>
                 <div class="posts-grid">
                     <?php
-                        $base_path_gambar = '../../admin/dist/pengumuman/uploads/';
+                        $base_path_gambar = '../../uploads/pengumuman/';
                         include '../../admin/dist/pengumuman/konten_pengumuman.php';
                     ?>
                 </div>

@@ -78,7 +78,6 @@ if (mysqli_num_rows($cek) == 0) {
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Informasi</h2>
-                <a href="#" class="view-all">Lebih lanjut<i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="category-icon-cards">
                 <div class="category-icon-card">

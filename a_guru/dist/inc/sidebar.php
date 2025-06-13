@@ -30,22 +30,22 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project_SMPN3/a_guru/dist/galeri/galeri_guru/galeri_guru.php">
+                        <a class="nav-link" href="/Project_SMPN3/a_guru/dist/galeri/galeri_guru.php">
                             <i class="fas fa-chalkboard-teacher me-2"></i>Galeri Guru
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project_SMPN3/a_guru/dist/layanan/capaian_pembelajaran/cp.php">
+                        <a class="nav-link" href="/Project_SMPN3/a_guru/dist/layanan/cp.php">
                             <i class="bi bi-bar-chart-line me-2"></i>Capaian Pembelajaran
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project_SMPN3/a_guru/dist/layanan/bahan_ajar/bahan_ajar.php">
+                        <a class="nav-link" href="/Project_SMPN3/a_guru/dist/layanan/bahan_ajar.php">
                             <i class="bi bi-journal-text me-2"></i>Bahan Ajar
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project_SMPN3/a_guru/dist/layanan/kumpulan_dok/kumpulan_dok.php">
+                        <a class="nav-link" href="/Project_SMPN3/a_guru/dist/layanan/kumpulan_dok.php">
                             <i class="bi bi-folder2-open me-2"></i>Kumpulan Dokumen
                         </a>
                     </li>

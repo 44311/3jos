@@ -42,8 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>SMPN 3 Pasar Kemis - Login Guru</title>
-    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
-    <link rel="stylesheet" href="../../admin/dist/css/login_page.css">
+    <link rel="icon" type="image/png" href="../../assets/img/logo_favicon.png">
+    <link rel="stylesheet" href="../dist/css/login_page.css">
 </head>
 <body>
 

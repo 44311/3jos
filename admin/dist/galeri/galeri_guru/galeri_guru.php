@@ -7,7 +7,6 @@ if (!isset($_SESSION['loginAdmin'])) {
 }
 ?>
 <?php
-session_start();
 include '../../../../config/config.php';
 
 // Ambil data dari database
@@ -35,7 +34,7 @@ if (isset($_POST['submit'])) {
     if (!empty($_FILES['foto']['name'])) {
         $filename = $_FILES['foto']['name'];
         $tmp = $_FILES['foto']['tmp_name'];
-        move_uploaded_file($tmp, "uploads/" . $filename);
+        move_uploaded_file($tmp, "../../../../uploads/galeri_guru/" . $filename);
     } else {
         $filename = $_POST['old_filename'];
     }
@@ -54,7 +53,23 @@ if (isset($_POST['submit'])) {
 // Proses hapus
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
-    mysqli_query($conn, "DELETE FROM galeri_guru WHERE id=$id");
+
+    // Ambil nama file
+    $result = mysqli_query($conn, "SELECT filename FROM galeri_guru WHERE id=$id");
+    $data = mysqli_fetch_assoc($result);
+
+    if ($data) {
+        $filePath = "../../../../uploads/galeri_guru/" . $data['filename'];
+
+        // Hapus file dari server
+        if (file_exists($filePath)) {
+            unlink($filePath);
+        }
+
+        // Hapus data dari database
+        mysqli_query($conn, "DELETE FROM galeri_guru WHERE id=$id");
+    }
+
     header("Location: galeri_guru.php");
     exit;
 }
@@ -65,7 +80,7 @@ if (isset($_GET['delete'])) {
 <head>
     <meta charset="UTF-8">
     <title>Kelola Galeri Guru</title>
-    <link rel="icon" type="image/png" href="/Project_SMPN3/assets/img/logo.png">
+    <link rel="icon" type="image/png" href="/Project_SMPN3/assets/img/logo_favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Penting! -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
@@ -119,7 +134,7 @@ if (isset($_GET['delete'])) {
                 <?php $no = 1; foreach ($galeri as $g): ?>
                 <tr>
                     <td><?= $no++ ?></td>
-                    <td><img src="uploads/<?= $g['filename'] ?>" alt="Foto"></td>
+                    <td><img src="/Project_SMPN3/uploads/galeri_guru/<?= $g['filename'] ?>" alt="Foto"></td>
                     <td><?= htmlspecialchars($g['caption']) ?></td>
                     <td>
                         <a href="?edit=<?= $g['id'] ?>" class="btn btn-sm btn-warning">Edit</a>
@@ -146,7 +161,7 @@ if (isset($_GET['delete'])) {
             <div class="mb-3">
                 <label class="form-label">Foto:</label><br>
                 <?php if ($editMode): ?>
-                    <img src="uploads/<?= $editData['filename'] ?>" width="100" class="mb-2"><br>
+                    <img src="/Project_SMPN3/uploads/galeri_guru/<?= $editData['filename'] ?>" width="100" class="mb-2"><br>
                 <?php endif; ?>
                 <input type="file" name="foto" class="form-control" <?= $editMode ? '' : 'required' ?>>
             </div>

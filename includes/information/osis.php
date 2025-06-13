@@ -23,7 +23,7 @@
     <!-- =============================================================================================== -->
     <!-- Osis -->   
     <section class="osis">
-        <div class="container">
+        <div class="container"> 
             <h2 class="section-title-osis">Struktur Organisasi OSIS</h2>
             <p class="section-subtitle-osis">
             Berikut adalah susunan pengurus OSIS SMP Negeri 3 Pasar Kemis tahun ajaran 2024/2025.
