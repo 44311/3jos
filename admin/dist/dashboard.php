@@ -48,6 +48,14 @@ $total3 = mysqli_fetch_assoc($q3)['total'];
 
 $total_upload_galeri = $total1 + $total2 + $total3;
 
+// Hapus data pengunjung yang lebih dari 30 hari
+$hapus_pengunjung_lama = mysqli_query($conn, "
+    DELETE FROM pengunjung 
+    WHERE waktu_kunjungan < DATE_SUB(NOW(), INTERVAL 30 DAY)
+");
+if (!$hapus_pengunjung_lama) {
+    error_log("Gagal menghapus data pengunjung lama: " . mysqli_error($conn));
+}
 
 // Query jumlah data bahan ajar
 $q_bahan_ajar = mysqli_query($conn, "SELECT COUNT(*) as total FROM bahan_ajar");
@@ -125,10 +133,10 @@ $total_capaian_pembelajaran = mysqli_fetch_assoc($q_capaian_pembelajaran)['total
                 <a href="galeri/galeri_kegiatan/galeri_kegiatan.php" class="btn btn-outline-warning w-100"><i class="fas fa-image"></i> Kelola Galeri</a>
             </div>
             <div class="col-md-3">
-            <a href="layanan/bahan_ajar/bahan_ajar.php" class="btn btn-outline-success w-100"><i class="fas fa-file"></i> Kelola Bahan Ajar</a>
+            <a href="layanan/bahan_ajar.php" class="btn btn-outline-success w-100"><i class="fas fa-file"></i> Kelola Bahan Ajar</a>
             </div>
             <div class="col-md-3">
-            <a href="layanan/capaian_pembelajaran/cp.php" class="btn btn-outline-danger w-100"><i class="fas fa-book"></i> Kelola Capaian Pembelajaran</a>
+            <a href="layanan/cp.php" class="btn btn-outline-danger w-100"><i class="fas fa-book"></i> Kelola Capaian Pembelajaran</a>
             </div>
             <div class="col-md-3">
             <div class="card bg-secondary text-white shadow">

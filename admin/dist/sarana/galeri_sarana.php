@@ -29,14 +29,23 @@ if (isset($_POST['submit'])) {
     $caption = $_POST['caption'];
     $id_edit = $_POST['id'];
 
-    // Upload file baru jika ada
+        // Upload file baru jika ada
     if (!empty($_FILES['foto']['name'])) {
         $filename = $_FILES['foto']['name'];
         $tmp = $_FILES['foto']['tmp_name'];
+
+        // Hapus file lama dulu
+        $oldFile = "uploads/" . $_POST['old_filename'];
+        if (file_exists($oldFile)) {
+            unlink($oldFile);
+        }
+
+        // Pindahkan file baru
         move_uploaded_file($tmp, "uploads/" . $filename);
     } else {
         $filename = $_POST['old_filename'];
     }
+
 
     if ($id_edit == '') {
         // Tambah baru

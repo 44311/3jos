@@ -55,7 +55,7 @@ if (mysqli_num_rows($cek) == 0) {
         <div class="wrapper-vm">
             <div class="container-vm">
                 <div class="hero-pic-sm">
-                    <img src="assets/img/OP3.jpeg" alt="profile pic">
+                    <img src="" alt="foto kepala sekolah">
                 </div>
                 <div class="hero-text-vm">
                     <h1 class="h1-vm">Sambutan Kepala Sekolah</h1>
@@ -127,7 +127,7 @@ if (mysqli_num_rows($cek) == 0) {
 
             </div>
         </div>
-    </section>>
+    </section>
 
     <!-- =================================================================================================================== -->
     <!-- Pengumuman -->
@@ -140,7 +140,7 @@ if (mysqli_num_rows($cek) == 0) {
             <div class="posts-grid">
                 <?php
                     $limit = 3;
-                    $base_path_gambar = 'admin/dist/pengumuman/uploads/';
+                    $base_path_gambar = 'uploads/pengumuman/';
                     include 'admin/dist/pengumuman/konten_pengumuman.php';
                 ?>
             </div>

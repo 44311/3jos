@@ -60,12 +60,19 @@ if (isset($_POST['update'])) {
     if ($_FILES['gambar']['name'] != "") {
         $gambar = $_FILES['gambar']['name'];
         $tmp = $_FILES['gambar']['tmp_name'];
-        move_uploaded_file($tmp, "../../../uploads/pengumuman/" . $gambar);
-        // Hapus gambar lama
+
+        // Ambil data lama sebelum upload baru
         $lama = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM pengumuman WHERE id_pengumuman=$id_pengumuman"));
-        if ($lama['gambar'] != "" && file_exists("../../../uploads/pengumuman/" . $lama['gambar'])) {
-            unlink("../../../uploads/pengumuman/" . $lama['gambar']);
+        $oldPath = "../../../uploads/pengumuman/" . $lama['gambar'];
+
+        // Hapus gambar lama (kalau ada)
+        if ($lama['gambar'] != "" && file_exists($oldPath)) {
+            unlink($oldPath);
         }
+
+        // Upload gambar baru
+        move_uploaded_file($tmp, "../../../uploads/pengumuman/" . $gambar);
+
         $query = "UPDATE pengumuman SET judul='$judul', isi='$isi', kategori='$kategori', tanggal='$tanggal', gambar='$gambar' WHERE id_pengumuman=$id_pengumuman";
     } else {
         $query = "UPDATE pengumuman SET judul='$judul', isi='$isi', kategori='$kategori', tanggal='$tanggal' WHERE id_pengumuman=$id_pengumuman";
@@ -74,6 +81,7 @@ if (isset($_POST['update'])) {
     mysqli_query($conn, $query);
     header("Location: pengumuman.php");
 }
+
 ?>
 
 <!DOCTYPE html>
